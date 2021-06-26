@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RollerCoin Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>ROLLERCOIN Calculator</h1>
+    </header>
+
+    <main>
+        
+        <div class="form-container">
+            <div class="form-content roller-section">
+                <h2></h2>
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Enter <span class="important">Network Power</span> For Desired Coin</label>
+                        <div class="roller-input-group">
+                            <input type="number" class="roller-input-number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Enter <span class="important">Your</span> Desired Goal Power</label>
+                        <div class="roller-input-group">
+                            <input type="number" class="roller-input-number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Enter <span class="important">Block Reward</span> For Desired Coin</label>
+                        <div class="roller-input-group">
+                            <input type="number" class="roller-input-number">
+                        </div>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input type="button" class="" value="Calculate" onclick="calculate()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="result-container">
+
+            <div class="calculated-reward roller-section">
+                <div class="table-responsive">
+                    <table class="roller-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <p>Calculated Reward</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Expected</p>
+                                </td>
+                                <td>
+                                    <p>0.0056</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daily</p>
+                                </td>
+                                <td>
+                                    <p>0.000111</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Weekly</p>
+                                </td>
+                                <td>
+                                    <p>0.7856</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Monthly</p>
+                                </td>
+                                <td>
+                                    <p>17.65232</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+
+                <div class="coin-selected">
+                    <div class="coin-selected-container">
+                        <div class="icon">
+                            <img src="./img/btc.svg" alt="Bitcoin">
+                        </div>
+                        <div class="title-text">
+                            <p>Bitcoin</p>
+                            <p>BTC</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <section class="top-footer">
+            <div class="privacy">Roller Calculator isn't endorsed by Rollercoin and does not reflect the views or opinions of anyone officially involved in producing and managing Rollercoin and their service(s).</div>
+        </section>
+        
+        <section class="bottom-footer">
+            <p>Aditional information</p>
+        </section>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
