@@ -39,6 +39,13 @@ body {
     background-color: var(--black-russian);
     color: var(--white);
     font-family: var(--font-family-sans-serif);
+    font-size: 1.1rem;
+}
+
+a{
+    color: var(--primary);
+    text-decoration: none;
+    
 }
 
 header {
@@ -218,17 +225,39 @@ tbody{
 }
 
 footer {
+    text-align: center;
+}
 
+footer ul li {
+    list-style: none;
 }
 
 .top-footer{
     background-color: #1e1924;
     color: #938d9e;
+    padding: .5rem;
+}
+
+.lang {
+    margin-bottom: .5rem;
 }
 
 .bottom-footer{
     background-color: #2f3045;
     color: #938d9e;
+    padding: .5rem;
+}
+
+.title {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: .3rem;
+}
+
+.social-media img {
+    width: 2.3rem;
 }
 
 .roller-select {
