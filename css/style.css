@@ -134,6 +134,7 @@ main form {
 }
 
 .tree-dimensional-button.btn-default input {
+    -webkit-appearance: none;
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
@@ -261,6 +262,7 @@ footer ul li {
 }
 
 .roller-select {
+    /*-webkit-appearance: none;*/
     font-family: var(--font-family-sans-serif);
     outline: none;
     font-size: 1.2rem;
