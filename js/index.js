@@ -76,7 +76,7 @@ function calculate () {
 function handleCoinIcon () {
     let coin  = blockReward[document.getElementById("selectBlockReward").value]
 
-    document.getElementById("coinIcon").src = "/img/" + coin.icon
+    document.getElementById("coinIcon").src = "./img/" + coin.icon
     document.getElementById("coinIcon").alt = coin.name + " icon"
     document.getElementById("coinName").innerHTML = coin.name
     document.getElementById("coinTicker").innerHTML = coin.ticker
