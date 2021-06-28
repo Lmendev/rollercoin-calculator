@@ -71,6 +71,10 @@ h1::before {
     content: "🐹 ";
 }
 
+h2, h3{
+    display: none
+}
+
 nav {
     text-transform: uppercase;
     font-size: 1.3rem;
