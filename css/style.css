@@ -58,7 +58,8 @@ header {
     min-height: 6rem;
     font-size: 1.2rem;
 
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
+    
 }
 
 h1 {
@@ -68,6 +69,31 @@ h1 {
 
 h1::before {
     content: "🐹 ";
+}
+
+nav {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+nav ul li:not(:first-child) {
+    padding-left: .5rem;
+    margin-left: .5rem;
+    border-left: 1px solid var(--white);
 }
 
 main {
@@ -90,6 +116,24 @@ main form {
     font-size: 1.2rem;
     display: block;
     margin-bottom: .4rem;
+}
+
+.form-group .label-wrapper label {
+    margin-bottom: 0;
+}
+
+.label-wrapper {
+    display: flex;
+    margin-bottom: .4rem;
+}
+
+.label-wrapper img{
+    width: 1.2rem;
+    margin-right: .3rem;
+}
+
+hr{
+    margin-bottom: 1rem;
 }
 
 .roller-input-group {
@@ -286,6 +330,9 @@ footer ul li {
     main {
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    table tbody tr td p {
+        padding: 0 .5rem;
     }
 }
 
