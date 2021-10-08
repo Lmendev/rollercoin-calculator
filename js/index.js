@@ -27,6 +27,13 @@ const blockReward = {
         ticker: "ETH",
         icon: "eth.svg"
     },
+    "BNB": {
+        dailyReward: 0.012,
+        timePerBlock: 600,
+        name: "Binancecoin",
+        ticker: "BNB",
+        icon: "bnb.svg"
+    },
     "RLT": {
         dailyReward: 30,
         timePerBlock: 600,
@@ -95,12 +102,13 @@ function calculateBestCoinsToMine(){
     let btc = parseFloat(document.getElementById("inputNetworkPowerBTC").value || 0) * unit[document.getElementById("selectNetworkPowerBTC").value]
     let doge = parseFloat(document.getElementById("inputNetworkPowerDOGE").value || 0) * unit[document.getElementById("selectNetworkPowerDOGE").value]
     let eth = parseFloat(document.getElementById("inputNetworkPowerETH").value || 0) * unit[document.getElementById("selectNetworkPowerETH").value]
+	let bnb = parseFloat(document.getElementById("inputNetworkPowerBNB").value || 0) * unit[document.getElementById("selectNetworkPowerBNB").value]
     let rlt = parseFloat(document.getElementById("inputNetworkPowerRLT").value || 0) * unit[document.getElementById("selectNetworkPowerRLT").value]
 
     let userPower = parseFloat(document.getElementById("inputUserPower").value || 0) * unit[document.getElementById("selectUserPower").value]
 
-    let networkPower = {btc, doge, eth, rlt}
-    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum&vs_currencies=usd"
+    let networkPower = {btc, doge, eth, bnb, rlt}
+    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin&vs_currencies=usd"
 
     fetch(COINGECKO_URL)
     .then(res => res.json())
