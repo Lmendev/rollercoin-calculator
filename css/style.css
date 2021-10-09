@@ -309,6 +309,11 @@ footer ul li {
     width: 2.3rem;
 }
 
+.social-media img:hover {
+    transform: translateY(-2px);
+    transition: transform .25s;
+}
+
 .roller-select {
     /*-webkit-appearance: none;*/
     font-family: var(--font-family-sans-serif);
