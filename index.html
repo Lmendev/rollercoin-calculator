@@ -72,7 +72,7 @@
                         <label for="">Enter <span class="important">Block Reward</span> For Desired Coin</label>
                         <div class="roller-input-group">
                             <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
-                            <select id="selectBlockReward" name="selectBlockReward" class="roller-select" onchange="handleBlockReward()">
+                            <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
                                 <option value="BTC" selected>BTC</option>
                                 <option value="DOGE">DOGE</option>
                                 <option value="ETH">ETH</option>
@@ -84,7 +84,7 @@
 
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input type="button" class="" value="Calculate" onclick="calculate()">
+                            <input id="calculateButton" type="button" class="" value="Calculate">
                         </div>
                     </div>
                 </form>
@@ -193,6 +193,6 @@
         </section>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
