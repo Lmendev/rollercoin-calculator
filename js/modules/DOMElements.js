@@ -30,5 +30,5 @@ export const DOMElements = {
     inputNetworkPowerRLT:   document.getElementById("inputNetworkPowerRLT"),
     selectNetworkPowerRLT:  document.getElementById("selectNetworkPowerRLT"),
 
-    resultTableBody:        document.getElementById("result-table").getElementsByTagName("tbody")[0]
+    resultTableBody:        document.getElementById("result-table")?.getElementsByTagName("tbody")[0]
 }
