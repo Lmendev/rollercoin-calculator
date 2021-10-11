@@ -1,6 +1,6 @@
 import { unit } from './constants.js'
 import { blockReward } from '../rollercoin.js'
-import { calculateReward } from './ALU.js'
+import { calculateRewardPerBlock, calculateReward, calculateBestCoinsToMine } from './ALU.js'
 
 export class Calculator {
     constructor({page, DOMElements}) {
@@ -20,7 +20,7 @@ export class Calculator {
                 this.handleCoinIcon()
                 this.calculate()
                 break
-            case 'best-coins-to-mine':
+            case 'bestCoinsToMine':
                 break
         }
     }
@@ -31,7 +31,8 @@ export class Calculator {
                 this.DOMElements.calculateButton.addEventListener('click', this.calculate.bind(this))
                 this.DOMElements.selectBlockReward.addEventListener('change', this.handleBlockReward.bind(this))
                 break
-            case 'best-coins-to-mine':
+            case 'bestCoinsToMine':
+                this.DOMElements.calculateButton.addEventListener('click', this.calculateBestCoins.bind(this))
                 break
         }
     }
@@ -74,55 +75,34 @@ export class Calculator {
         this.handleCoinIcon()
     }
 
-    calculateBestCoinsToMine() {
-        let btc = parseFloat(document.getElementById("inputNetworkPowerBTC").value || 0) * unit[document.getElementById("selectNetworkPowerBTC").value]
-        let doge = parseFloat(document.getElementById("inputNetworkPowerDOGE").value || 0) * unit[document.getElementById("selectNetworkPowerDOGE").value]
-        let eth = parseFloat(document.getElementById("inputNetworkPowerETH").value || 0) * unit[document.getElementById("selectNetworkPowerETH").value]
-        let bnb = parseFloat(document.getElementById("inputNetworkPowerBNB").value || 0) * unit[document.getElementById("selectNetworkPowerBNB").value]
-        let rlt = parseFloat(document.getElementById("inputNetworkPowerRLT").value || 0) * unit[document.getElementById("selectNetworkPowerRLT").value]
-    
-        let userPower = parseFloat(document.getElementById("inputUserPower").value || 0) * unit[document.getElementById("selectUserPower").value]
-    
+    async calculateBestCoins() {
+        let btc = parseFloat(this.DOMElements.inputNetworkPowerBTC.value || 0)      * unit[this.DOMElements.selectNetworkPowerBTC.value]
+        let doge = parseFloat(this.DOMElements.inputNetworkPowerDOGE.value || 0)    * unit[this.DOMElements.selectNetworkPowerDOGE.value]
+        let eth = parseFloat(this.DOMElements.inputNetworkPowerETH.value || 0)      * unit[this.DOMElements.selectNetworkPowerETH.value]
+        let bnb = parseFloat(this.DOMElements.inputNetworkPowerBNB.value || 0)      * unit[this.DOMElements.selectNetworkPowerBNB.value]
+        let rlt = parseFloat(this.DOMElements.inputNetworkPowerRLT.value || 0)      * unit[this.DOMElements.selectNetworkPowerRLT.value]
+        
         let networkPower = {btc, doge, eth, bnb, rlt}
     
+        let userPower = parseFloat(this.DOMElements.inputUserPower.value || 0) * unit[this.DOMElements.selectUserPower.value]
     
-        const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin&vs_currencies=usd"
-    
-        fetch(COINGECKO_URL)
-        .then(res => res.json())
-        .then(coingecko => {
-            let newcoingecko = { ...coingecko, "rollertoken": { "usd": 1 }}
-            let result = []
-    
-            for (ticker in blockReward) {
-                let rewardPerBlock = calculateRewardPerBlock(networkPower[ticker.toLowerCase()], parseFloat(blockReward[ticker].dailyReward || 0), userPower)
-                let { timePerBlock } = blockReward[ticker]
-    
-                let monthlyRewardUSD   = (rewardPerBlock * secondsInAMonth / timePerBlock * newcoingecko[blockReward[ticker].name.toLowerCase()].usd).toFixed(SHORT_FIXED)
-    
-                result.push({ 
-                    ...blockReward[ticker],
-                    monthlyRewardUSD 
-                })
-            }
-    
-            let resultSorted = result.sort((a, b) => b.monthlyRewardUSD - a.monthlyRewardUSD)
-    
-            let tbody = document.getElementById("result-table").getElementsByTagName("tbody")[0]
+        let bestCoinsToMine = await calculateBestCoinsToMine({ networkPower, userPower })
+        
+        if(bestCoinsToMine?.data) {
+            let tbody = this.DOMElements.resultTableBody
             tbody.innerHTML = ""
     
-            for (coinResult in resultSorted){
+            for (let coinResult in bestCoinsToMine.data){
                 tbody.innerHTML += 
                     `<tr>
                         <td>
-                            <p>${resultSorted[coinResult].name}</p>
+                            <p>${bestCoinsToMine.data[coinResult].name}</p>
                         </td>
                         <td>
-                            <p>$${resultSorted[coinResult].monthlyRewardUSD} / Month</p>
+                            <p>$${bestCoinsToMine.data[coinResult].monthlyRewardUSD} / Month</p>
                         </td>
                     </tr>`
             }
-        })
-        .catch(err => { throw err });
+        }
     }
 }

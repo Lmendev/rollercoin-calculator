@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>RollerCoin Calculator</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
-    <script src="./js/analytics/gtag.js"></script>
+    <script src="../js/analytics/gtag.js"></script>
 </head>
-<body>
+<body id="bestCoinsToMine">
     <header>
         <h1>ROLLERCOIN Calculator</h1>
     </header>
@@ -126,7 +126,7 @@
 
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input type="button" class="" value="Calculate" onclick="calculateBestCoinsToMine()">
+                            <input id="calculateButton" type="button" class="" value="Calculate">
                         </div>
                     </div>
                 </form>
@@ -189,6 +189,6 @@
         </section>
     </footer>
 
-    <script src="../js/index.js"></script>
+    <script src="../js/index.js" type="module"></script>
 </body>
 </html>

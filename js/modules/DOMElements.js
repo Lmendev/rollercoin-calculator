@@ -17,5 +17,18 @@ export const DOMElements = {
 
     coinIcon:               document.getElementById("coinIcon"),
     coinName:               document.getElementById("coinName"),
-    coinTicker:             document.getElementById("coinTicker")
+    coinTicker:             document.getElementById("coinTicker"),
+
+    inputNetworkPowerBTC:   document.getElementById("inputNetworkPowerBTC"),
+    selectNetworkPowerBTC:  document.getElementById("selectNetworkPowerBTC"),
+    inputNetworkPowerDOGE:  document.getElementById("inputNetworkPowerDOGE"),
+    selectNetworkPowerDOGE: document.getElementById("selectNetworkPowerDOGE"),
+    inputNetworkPowerETH:   document.getElementById("inputNetworkPowerETH"),
+    selectNetworkPowerETH:  document.getElementById("selectNetworkPowerETH"),
+    inputNetworkPowerBNB:   document.getElementById("inputNetworkPowerBNB"),
+    selectNetworkPowerBNB:  document.getElementById("selectNetworkPowerBNB"),
+    inputNetworkPowerRLT:   document.getElementById("inputNetworkPowerRLT"),
+    selectNetworkPowerRLT:  document.getElementById("selectNetworkPowerRLT"),
+
+    resultTableBody:        document.getElementById("result-table").getElementsByTagName("tbody")[0]
 }
