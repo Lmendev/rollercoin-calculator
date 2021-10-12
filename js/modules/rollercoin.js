@@ -7,7 +7,7 @@ export const blockReward = {
         icon: "btc.svg"
     },
     "DOGE": {
-        dailyReward: 20,
+        dailyReward: 80,
         timePerBlock: 600,
         name: "Dogecoin",
         ticker: "DOGE",
