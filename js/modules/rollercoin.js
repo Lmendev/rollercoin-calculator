@@ -28,7 +28,7 @@ export const blockReward = {
         icon: "bnb.svg"
     },
     "RLT": {
-        dailyReward: 60,
+        dailyReward: 30,
         timePerBlock: 600,
         name: "Rollertoken",
         ticker: "RLT",
