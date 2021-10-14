@@ -33,6 +33,7 @@ input[type=number] {
 @font-face {
     font-family: pixelSC;
     src: url('../fonts/PixelOperatorSC.ttf');
+    font-display: swap;
 }
 
 body {
