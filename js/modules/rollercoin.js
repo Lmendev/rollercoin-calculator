@@ -1,6 +1,6 @@
 export const blockReward = {
     "BTC": {
-        dailyReward: 0.0003,
+        dailyReward: 0.0006,
         timePerBlock: 600,
         name: "Bitcoin",
         ticker: "BTC",
