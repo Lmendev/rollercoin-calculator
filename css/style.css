@@ -33,6 +33,7 @@ input[type=number] {
 @font-face {
     font-family: pixelSC;
     src: url('../fonts/PixelOperatorSC.ttf');
+    font-display: swap;
 }
 
 body {
@@ -293,7 +294,7 @@ footer ul li {
 
 .bottom-footer{
     background-color: var(--ebony-clay);
-    color: #938d9e;
+    color: #b8b5bf;
     padding: .5rem;
 }
 

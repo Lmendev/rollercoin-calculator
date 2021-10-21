@@ -1,13 +1,13 @@
 export const blockReward = {
     "BTC": {
-        dailyReward: 0.0003,
+        dailyReward: 0.0006,
         timePerBlock: 600,
         name: "Bitcoin",
         ticker: "BTC",
         icon: "btc.svg"
     },
     "DOGE": {
-        dailyReward: 20,
+        dailyReward: 80,
         timePerBlock: 600,
         name: "Dogecoin",
         ticker: "DOGE",
@@ -28,7 +28,7 @@ export const blockReward = {
         icon: "bnb.svg"
     },
     "RLT": {
-        dailyReward: 60,
+        dailyReward: 30,
         timePerBlock: 600,
         name: "Rollertoken",
         ticker: "RLT",
