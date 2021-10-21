@@ -215,7 +215,7 @@ hr{
 .roller-table thead th {
     border: none;
     border-radius: 4px;
-    background-color: #181928;
+    background-color: var(--black-russian);
     padding: 8px 16px;
 }
 
@@ -229,18 +229,18 @@ table td, table th {
 
 table tbody tr td:first-child p {
     padding-left: 16px;
-    border-left: 1px solid #6a668a;
-    border-right: 1px solid #6a668a;
+    border-left: 1px solid var(--rum);
+    border-right: 1px solid var(--rum);
 }
 
 table tbody tr td:last-child p {
     padding-right: 16px;
     text-align: right;
-    border-right: 1px solid #6a668a;
+    border-right: 1px solid var(--rum);
 }
 
 .roller-table tbody tr td {
-    border-bottom: 1px solid #6a668a;
+    border-bottom: 1px solid var(--rum);
 }
 
 thead{
@@ -292,7 +292,7 @@ footer ul li {
 }
 
 .bottom-footer{
-    background-color: #2f3045;
+    background-color: var(--ebony-clay);
     color: #938d9e;
     padding: .5rem;
 }
