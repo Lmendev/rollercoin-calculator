@@ -1,0 +1,33 @@
+:root{
+    --black-russian: #151515;
+    --ebony-clay: #343434;
+    --steel-gray: #151515;
+    --primary: #EA5F21;
+    --rum: #464646;
+}
+
+h1::after{
+    content: " 🎃🦇";
+}
+
+.tree-dimensional-button.btn-default {
+    box-shadow: 0 6px #72674e, 0 10px #1f1f2c;
+}
+
+.tree-dimensional-button.btn-default input{
+    background-color: #c9742b;
+    border: 1px solid #c76009;
+}
+
+.top-footer {
+    background-color: #343434;
+}
+
+.bottom-footer {
+    background-color: #484848;
+    color: #fff;
+}
+
+.roller-table thead th {
+    background-color: #b96b28;
+}
