@@ -1,6 +1,6 @@
 export const blockReward = {
     "BTC": {
-        dailyReward: 0.0006,
+        dailyReward: 0.0003,
         timePerBlock: 600,
         name: "Bitcoin",
         ticker: "BTC",
@@ -21,7 +21,7 @@ export const blockReward = {
         icon: "eth.svg"
     },
     "BNB": {
-        dailyReward: 0.012,
+        dailyReward: 0.024,
         timePerBlock: 600,
         name: "Binancecoin",
         ticker: "BNB",
