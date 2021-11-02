@@ -21,14 +21,14 @@ export const blockReward = {
         icon: "eth.svg"
     },
     "BNB": {
-        dailyReward: 0.024,
+        dailyReward: 0.012,
         timePerBlock: 600,
         name: "Binancecoin",
         ticker: "BNB",
         icon: "bnb.svg"
     },
     "RLT": {
-        dailyReward: 30,
+        dailyReward: 60,
         timePerBlock: 600,
         name: "Rollertoken",
         ticker: "RLT",
