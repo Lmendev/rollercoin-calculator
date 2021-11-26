@@ -14,7 +14,7 @@ export const blockReward = {
         icon: "doge.svg"
     },
     "ETH": {
-        dailyReward: 0.01,
+        dailyReward: 0.005,
         timePerBlock: 600,
         name: "Ethereum",
         ticker: "ETH",
