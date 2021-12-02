@@ -18,8 +18,16 @@ header {
     border-bottom: 0.4rem double white;
 }
 
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+nav ul li:not(:first-child) {
+    border-left: 1px solid #f93535;
+}
+
 .roller-section{
-    background-color: #505050;
+    background-color: #303030;
 }
 
 .tree-dimensional-button.btn-default {
@@ -28,7 +36,11 @@ header {
 
 .tree-dimensional-button.btn-default input{
     background-color: #b13427;
-    border: 1px solid #fff;
+    border: 1px solid #911818;
+}
+
+.roller-select, .roller-input-number{
+    border: 1px solid var(--rum);
 }
 
 footer {
