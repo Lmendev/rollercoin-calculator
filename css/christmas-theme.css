@@ -1,0 +1,61 @@
+:root{
+    --black-russian: rgb(48, 48, 48);
+    --ebony-clay: #810000;
+    --steel-gray: #151515;
+    --primary: #f93535;
+    --rum: #EEEBDD;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+h1::after{
+    content: " 🌟🎄";
+}
+
+header {
+    border-bottom: 0.4rem double white;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+nav ul li:not(:first-child) {
+    border-left: 1px solid #f93535;
+}
+
+.roller-section{
+    background-color: #303030;
+}
+
+.tree-dimensional-button.btn-default {
+    box-shadow: 0 6px #743131, 0 10px #2c231f;
+}
+
+.tree-dimensional-button.btn-default input{
+    background-color: #b13427;
+    border: 1px solid #911818;
+}
+
+.roller-select, .roller-input-number{
+    border: 1px solid var(--rum);
+}
+
+footer {
+    border-top: 0.4rem double white;
+}
+
+.top-footer {
+    background-color: #1B1717;
+}
+
+.bottom-footer {
+    background-color: #630000;
+    color: #fff;
+}
+
+.roller-table thead th {
+    background-color: #303030;
+}
