@@ -82,7 +82,7 @@ nav {
     margin-bottom: 1.2rem;
 }
 
-nav ul {
+nav ul, .lang ul {
     display: flex;
     justify-content: center;
 }
@@ -91,11 +91,11 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li:hover{
+nav ul li:hover, .lang ul li:hover{
     text-decoration: underline;
 }
 
-nav ul li:not(:first-child) {
+nav ul li:not(:first-child), .lang ul li:not(:first-child)  {
     padding-left: .5rem;
     margin-left: .5rem;
     border-left: 1px solid var(--white);
