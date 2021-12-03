@@ -59,8 +59,9 @@ export class Calculator {
 
     handleCoinIcon () {
         let coin  = blockReward[this.DOMElements.selectBlockReward.value]
-    
-        this.DOMElements.coinIcon.src = "./img/" + coin.icon
+        let prefix = window.location.pathname === '/es/'? '../' : '.'
+
+        this.DOMElements.coinIcon.src = prefix + "/img/" + coin.icon
         this.DOMElements.coinIcon.alt = coin.name + " icon"
         this.DOMElements.coinName.innerHTML = coin.name
         this.DOMElements.coinTicker.innerHTML = coin.ticker

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <!--<link rel="stylesheet" href="./css/halloween-theme.css">-->
-    <link rel="stylesheet" href="./css/christmas-theme.css">
-    <title>RollerCoin Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="stylesheet" href="../css/halloween-theme.css">-->
+    <link rel="stylesheet" href="../css/christmas-theme.css">
+    <title>Calculadora Rollercoin</title>
     
     <meta name="description" content="Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage."/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
-    <script src="./js/analytics/gtag.js"></script>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script src="../js/analytics/gtag.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     
     <meta name="google-site-verification" content="P0Wlg-HV2OUnCIeP7Guu70fZNk8rHSvPlYRqxzBXhmc" />
     <meta property="og:title" content="RollerCoin Calculator">
@@ -27,14 +27,14 @@
 </head>
 <body id="index">
     <header>
-        <h1>ROLLERCOIN Calculator</h1>
+        <h1>Calculadora ROLLERCOIN</h1>
     </header>
 
     <nav>
         <h2>Navigation</h2>
         <ul>
-            <li><a href="./">Calculator</a></li>
-            <li><a href="./pages/best-coins-to-mine.html">coins to mine</a></li>
+            <li><a href="../es">Calculadora</a></li>
+            <li><a href="pages/best-coins-to-mine.html">Monedas para minar</a></li>
         </ul>
     </nav>
 
@@ -45,7 +45,7 @@
 
                 <form action="">
                     <div class="form-group">
-                        <label for="inputNetworkPower">Enter <span class="important">Network Power</span> For Desired Coin</label>
+                        <label for="inputNetworkPower">Ingrese <span class="important">Potencia de la red</span> de la moneda deseada</label>
                         <div class="roller-input-group">
                             <input id="inputNetworkPower" type="number" name="inputNetworkPower" class="roller-input-number">
                             <select id="selectNetworkPower" name="" class="roller-select">
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="inputUserPower">Enter <span class="important">Your</span> Desired Goal Power</label>
+                        <label for="inputUserPower">Ingrese <span class="important">Su potencia</span> para la moneda deseada</label>
                         <div class="roller-input-group">
                             <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
                             <select name="" id="selectUserPower" class="roller-select">
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="inputBlockReward">Enter <span class="important">Block Reward</span> For Desired Coin</label>
+                        <label for="inputBlockReward">Seleccione <span class="important">moneda deseada</span> y <span class="important">Recompensa por bloque</span></label>
                         <div class="roller-input-group">
                             <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
                             <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
@@ -86,7 +86,7 @@
 
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input id="calculateButton" type="button" class="" value="Calculate">
+                            <input id="calculateButton" type="button" class="" value="Calcular">
                         </div>
                     </div>
                 </form>
@@ -101,14 +101,14 @@
                         <thead>
                             <tr>
                                 <th colspan="2">
-                                    <p>Calculated Reward</p>
+                                    <p>Resultados de recompensas</p>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>Expected</p>
+                                    <p>Por bloque</p>
                                 </td>
                                 <td>
                                     <p id="resultExpectedReward"></p>
@@ -116,7 +116,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Daily</p>
+                                    <p>Diario</p>
                                 </td>
                                 <td>
                                     <p id="resultDailyReward"></p>
@@ -124,7 +124,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Weekly</p>
+                                    <p>Semanal</p>
                                 </td>
                                 <td>
                                     <p id="resultWeeklyReward"></p>
@@ -132,7 +132,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Monthly</p>
+                                    <p>Mensual</p>
                                 </td>
                                 <td>
                                     <p id="resultMonthlyReward"></p>
@@ -146,7 +146,7 @@
                 <div class="desired-coin">
                     <div class="desired-coin-container">
                         <div class="icon">
-                            <img id="coinIcon" src="./img/btc.svg" alt="Bitcoin">
+                            <img id="coinIcon" src="../img/btc.svg" alt="Bitcoin">
                         </div>
                         <div class="title-text">
                             <p id="coinName">Bitcoin</p>
@@ -166,21 +166,21 @@
                 <h3>Languajes</h3>
                 <ul class="">
                     <li>
-                        <a href="#">English</a>
+                        <a href="../">English</a>
                     </li>
                     <li>
-                        <a href="es">Español</a>
+                        <a href="#">Español</a>
                     </li>
                 </ul>
             </div>
 
             <div class="contact">
                 <h3>Contact</h3>
-                <p class="title">Contact me</p>
+                <p class="title">Contáctame</p>
                 <ul class="social-media">
                     <li>
                         <a href="https://twitter.com/lmendev">
-                            <img src="./img/social-media/twitter.svg" alt="twitter icon">
+                            <img src="../img/social-media/twitter.svg" alt="twitter icon">
                         </a>
                     </li>
                 </ul>
@@ -191,13 +191,13 @@
             <h3>Term of service</h3>
             <div class="legal">
                 <ul>
-                    <li><a href="">Term of service</a></li>
+                    <li><a href="">Términos de servicio</a></li>
                 </ul>
             </div>
-            <p>Aditional information coming soon</p>
+            <p>Próximamente información adicional</p>
         </section>
     </footer>
 
-    <script src="./js/index.js" type="module"></script>
+    <script src="../js/index.js" type="module"></script>
 </body>
 </html>
