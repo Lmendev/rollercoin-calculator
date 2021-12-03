@@ -22,7 +22,7 @@ export const blockReward = {
     },
     "BNB": {
         dailyReward: 0.012,
-        timePerBlock: 900,
+        timePerBlock: 600,
         name: "Binancecoin",
         ticker: "BNB",
         icon: "bnb.svg"
