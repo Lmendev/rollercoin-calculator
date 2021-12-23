@@ -17,7 +17,7 @@ export const calculateReward = ({ inputNetworkPower, inputUserPower, inputBlockR
 }
 
 export const calculateBestCoinsToMine = async ({networkPower, userPower}) => {
-    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin&vs_currencies=usd"
+    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin,matic-network&vs_currencies=usd"
         
     try{
         let res         = await fetch(COINGECKO_URL) 
@@ -30,7 +30,7 @@ export const calculateBestCoinsToMine = async ({networkPower, userPower}) => {
             let rewardPerBlock = calculateRewardPerBlock(networkPower[ticker.toLowerCase()], parseFloat(blockReward[ticker].dailyReward || 0), userPower)
             let { timePerBlock } = blockReward[ticker]
 
-            let monthlyRewardUSD   = (rewardPerBlock * secondsInAMonth / timePerBlock * newcoingecko[blockReward[ticker].name.toLowerCase()].usd).toFixed(SHORT_FIXED)
+            let monthlyRewardUSD   = (rewardPerBlock * secondsInAMonth / timePerBlock * (newcoingecko[blockReward[ticker].name.toLowerCase()] || newcoingecko[blockReward[ticker].ticker] ).usd).toFixed(SHORT_FIXED)
 
             result.push({ 
                 ...blockReward[ticker],
