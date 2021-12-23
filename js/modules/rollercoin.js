@@ -27,6 +27,13 @@ export const blockReward = {
         ticker: "BNB",
         icon: "bnb.svg"
     },
+    "MATIC": {
+        dailyReward: 3,
+        timePerBlock: 600,
+        name: "Polygon",
+        ticker: "matic-network",
+        icon: "matic.svg"
+    },
     "RLT": {
         dailyReward: 30,
         timePerBlock: 600,

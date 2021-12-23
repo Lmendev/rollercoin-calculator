@@ -29,6 +29,9 @@ export const DOMElements = {
     selectNetworkPowerBNB:  document.getElementById("selectNetworkPowerBNB"),
     inputNetworkPowerRLT:   document.getElementById("inputNetworkPowerRLT"),
     selectNetworkPowerRLT:  document.getElementById("selectNetworkPowerRLT"),
+    inputNetworkPowerMATIC:   document.getElementById("inputNetworkPowerMATIC"),
+    selectNetworkPowerMATIC:  document.getElementById("selectNetworkPowerMATIC"),
+
 
     resultTableBody:        document.getElementById("result-table")?.getElementsByTagName("tbody")[0]
 }

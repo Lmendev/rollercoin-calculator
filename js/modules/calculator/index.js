@@ -81,9 +81,10 @@ export class Calculator {
         let doge = parseFloat(this.DOMElements.inputNetworkPowerDOGE.value || 0)    * unit[this.DOMElements.selectNetworkPowerDOGE.value]
         let eth = parseFloat(this.DOMElements.inputNetworkPowerETH.value || 0)      * unit[this.DOMElements.selectNetworkPowerETH.value]
         let bnb = parseFloat(this.DOMElements.inputNetworkPowerBNB.value || 0)      * unit[this.DOMElements.selectNetworkPowerBNB.value]
+        let matic = parseFloat(this.DOMElements.inputNetworkPowerMATIC.value || 0)  * unit[this.DOMElements.selectNetworkPowerMATIC.value]
         let rlt = parseFloat(this.DOMElements.inputNetworkPowerRLT.value || 0)      * unit[this.DOMElements.selectNetworkPowerRLT.value]
         
-        let networkPower = {btc, doge, eth, bnb, rlt}
+        let networkPower = {btc, doge, eth, bnb, rlt, matic}
     
         let userPower = parseFloat(this.DOMElements.inputUserPower.value || 0) * unit[this.DOMElements.selectUserPower.value]
     
