@@ -2,24 +2,40 @@ const githubApi = 'https://api.github.com'
 const owner = 'lmendev'
 const repo = 'rollercoin-calculator'
 
-const contributors  = `${githubApi}/repos/${owner}/${repo}/contributors`
-const latestRelease = `${githubApi}/repos/${owner}/${repo}/releases/latest`
-const latestCommit  = `${githubApi}/repos/${owner}/${repo}/commits/main`
+const contributorsURL  = `${githubApi}/repos/${owner}/${repo}/contributors`
+const latestReleaseURL = `${githubApi}/repos/${owner}/${repo}/releases/latest`
+const latestCommitURL  = `${githubApi}/repos/${owner}/${repo}/commits/main`
 
-const API_URL = contributors
-
-async function fetchUsers() {
- try{
-   const response = await fetch(API_URL)
-   const users = await response.json();
-   return users;
+export const getContributors = async () => {
+  try{
+    const response    = await fetch(contributorsURL)
+    let contributors  = await response.json();
+    contributors = contributors.map(({ login, avatar_url }) => { return { 'user': login, 'avatar': avatar_url } })
+    
+    return contributors;
   }catch(err){
     console.error(err); 
   }
 }
 
-fetchUsers().then(users => {
-  console.log(users); // fetched users
-});
+export const getLatestRelease = async () => {
+  try{
+    const response    = await fetch(latestReleaseURL)
+    let latestRelease  = await response.json();
+    
+    return latestRelease;
+  }catch(err){
+    console.error(err); 
+  }
+}
 
-console.log(contributors)
+export const getLatestCommit = async () => {
+  try{
+    const response    = await fetch(latestCommitURL)
+    let latestCommit  = await response.json();
+    
+    return latestCommit;
+  }catch(err){
+    console.error(err); 
+  }
+}
