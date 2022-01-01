@@ -330,6 +330,20 @@ footer ul li {
     border-radius: 0 4px 4px 0;
 }
 
+aside.apps-promotion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+aside.apps-promotion ul {
+    list-style-type: none;
+}
+
+aside.apps-promotion img {
+    width: 10rem;
+}
+
 @media (hover: hover) {
     .tree-dimensional-button:hover {
         opacity: .7;
