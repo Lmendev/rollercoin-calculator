@@ -14,14 +14,14 @@ export const blockReward = {
         icon: "doge.svg"
     },
     "ETH": {
-        dailyReward: 0.005,
+        dailyReward: 0.008,
         timePerBlock: 600,
         name: "Ethereum",
         ticker: "ETH",
         icon: "eth.svg"
     },
     "BNB": {
-        dailyReward: 0.012,
+        dailyReward: 0.02,
         timePerBlock: 600,
         name: "Binancecoin",
         ticker: "BNB",
