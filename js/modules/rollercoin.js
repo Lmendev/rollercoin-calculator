@@ -28,7 +28,7 @@ export const blockReward = {
         icon: "bnb.svg"
     },
     "MATIC": {
-        dailyReward: 3,
+        dailyReward: 4,
         timePerBlock: 600,
         name: "Polygon",
         ticker: "matic-network",
