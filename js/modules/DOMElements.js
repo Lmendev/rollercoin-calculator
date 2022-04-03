@@ -31,6 +31,8 @@ export const DOMElements = {
     selectNetworkPowerRLT:  document.getElementById("selectNetworkPowerRLT"),
     inputNetworkPowerMATIC:   document.getElementById("inputNetworkPowerMATIC"),
     selectNetworkPowerMATIC:  document.getElementById("selectNetworkPowerMATIC"),
+    inputNetworkPowerSOL:   document.getElementById("inputNetworkPowerSOL"),
+    selectNetworkPowerSOL:  document.getElementById("selectNetworkPowerSOL"),
 
 
     resultTableBody:        document.getElementById("result-table")?.getElementsByTagName("tbody")[0]
