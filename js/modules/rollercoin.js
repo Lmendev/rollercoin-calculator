@@ -40,5 +40,12 @@ export const blockReward = {
         name: "Rollertoken",
         ticker: "RLT",
         icon: "rlt.svg"
+    },
+    "SOL": {
+        dailyReward: 0.06,
+        timePerBlock: 600,
+        name: "Solana",
+        ticker: "SOL",
+        icon: "sol.svg"
     }
 }

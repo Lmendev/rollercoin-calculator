@@ -17,12 +17,12 @@ export const calculateReward = ({ inputNetworkPower, inputUserPower, inputBlockR
 }
 
 export const calculateBestCoinsToMine = async ({networkPower, userPower}) => {
-    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin,matic-network&vs_currencies=usd"
+    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin,matic-network,solana&vs_currencies=usd"
         
     try{
         let res         = await fetch(COINGECKO_URL) 
         let coingecko   = await res.json()
-        
+
         let newcoingecko = { ...coingecko, "rollertoken": { "usd": 1 }}
         let result = []
 
