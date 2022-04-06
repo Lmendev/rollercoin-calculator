@@ -42,7 +42,7 @@ export const blockReward = {
         icon: "rlt.svg"
     },
     "SOL": {
-        dailyReward: 0.05,
+        dailyReward: 0.06,
         timePerBlock: 600,
         name: "Solana",
         ticker: "SOL",
