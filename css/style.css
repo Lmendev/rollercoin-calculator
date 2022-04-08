@@ -274,6 +274,10 @@ tbody{
     font-size: 1.4rem;
 }
 
+.about {
+    text-align: center;
+}
+
 footer {
     text-align: center;
 }
