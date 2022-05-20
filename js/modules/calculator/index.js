@@ -59,7 +59,7 @@ export class Calculator {
 
     handleCoinIcon () {
         let coin  = blockReward[this.DOMElements.selectBlockReward.value]
-        let prefix = window.location.pathname.split('/').filter(s => s).pop() === 'es'? '../' : '.'
+        let prefix = window.location.pathname.split('/').filter(s => s && s !== 'index.html').pop() === 'es'? '../' : '.'
 
         this.DOMElements.coinIcon.src = prefix + "/img/" + coin.icon
         this.DOMElements.coinIcon.alt = coin.name + " icon"
