@@ -33,6 +33,8 @@ export const DOMElements = {
     selectNetworkPowerMATIC:  document.getElementById("selectNetworkPowerMATIC"),
     inputNetworkPowerSOL:   document.getElementById("inputNetworkPowerSOL"),
     selectNetworkPowerSOL:  document.getElementById("selectNetworkPowerSOL"),
+    inputNetworkPowerTRX:   document.getElementById("inputNetworkPowerTRX"),
+    selectNetworkPowerTRX:  document.getElementById("selectNetworkPowerTRX"),
 
 
     resultTableBody:        document.getElementById("result-table")?.getElementsByTagName("tbody")[0]
