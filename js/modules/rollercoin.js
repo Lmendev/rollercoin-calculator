@@ -47,5 +47,18 @@ export const blockReward = {
         name: "Solana",
         ticker: "SOL",
         icon: "sol.svg"
-    }
+    },
+    "RST": {
+        dailyReward: 150,
+        timePerBlock: 600,
+        name: "Roller Season Token",
+        icon: "rst.svg"
+    },
+    "TRX": {
+        dailyReward: 90,
+        timePerBlock: 600,
+        name: "Tron",
+        ticker: "tron",
+        icon: "trx.svg"
+    },
 }
