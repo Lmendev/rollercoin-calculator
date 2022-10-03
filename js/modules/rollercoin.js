@@ -35,7 +35,7 @@ export const blockReward = {
         icon: "matic.svg"
     },
     "RLT": {
-        dailyReward: 30,
+        dailyReward: 20,
         timePerBlock: 600,
         name: "Rollertoken",
         ticker: "RLT",
