@@ -56,7 +56,7 @@ export const blockReward = {
     },
     "TRX": {
         dailyReward: 60,
-        timePerBlock: 660,
+        timePerBlock: 600,
         name: "Tron",
         ticker: "tron",
         icon: "trx.svg"
