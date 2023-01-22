@@ -22,13 +22,13 @@ export const blockReward = {
     },
     "BNB": {
         dailyReward: 0.025,
-        timePerBlock: 1800,
+        timePerBlock: 600,
         name: "Binancecoin",
         ticker: "BNB",
         icon: "bnb.svg"
     },
     "MATIC": {
-        dailyReward: 3,
+        dailyReward: 4,
         timePerBlock: 600,
         name: "Polygon",
         ticker: "matic-network",
@@ -43,7 +43,7 @@ export const blockReward = {
     },
     "SOL": {
         dailyReward: 0.1,
-        timePerBlock: 680,
+        timePerBlock: 600,
         name: "Solana",
         ticker: "SOL",
         icon: "sol.svg"
@@ -63,7 +63,7 @@ export const blockReward = {
     },
     "LTC": {
         dailyReward: 0.015,
-        timePerBlock: 1848,
+        timePerBlock: 600,
         name: "Litecoin",
         ticker: "ltc",
         icon: "ltc.svg"
