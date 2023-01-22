@@ -10,6 +10,9 @@ export const DOMElements = {
 
     inputBlockReward:       document.getElementById("inputBlockReward"),
 
+    inputTimePerBlock:       document.getElementById("inputTimePerBlock"),
+    selectTimePerBlock:      document.getElementById("selectTimePerBlock"),
+
     resultExpectedReward:   document.getElementById("resultExpectedReward"),
     resultDailyReward:      document.getElementById("resultDailyReward"),
     resultWeeklyReward:     document.getElementById("resultWeeklyReward"),
