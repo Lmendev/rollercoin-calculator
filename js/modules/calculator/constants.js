@@ -11,3 +11,8 @@ export const unit = {
     "PH/s": 1000000000000000,
     "EH/s": 1000000000000000000
 }
+
+export const TIME_UNIT = {
+    "SECONDS": 1,
+    "MINUTES": 60
+}

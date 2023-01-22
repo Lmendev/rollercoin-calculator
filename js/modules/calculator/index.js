@@ -18,6 +18,7 @@ export class Calculator {
             case 'index':
                 this.handleBlockReward()
                 this.handleCoinIcon()
+                this.handleTimePerBlock()
                 this.calculate()
                 break
             case 'bestCoinsToMine':
@@ -73,7 +74,17 @@ export class Calculator {
         
         inputBlockReward.value = blockReward[blockRewardselected].dailyReward
         
+        this.handleTimePerBlock()
         this.handleCoinIcon()
+    }
+
+    handleTimePerBlock () {
+        let blockRewardselected = this.DOMElements.selectBlockReward.value
+        let inputTimePerBlock = this.DOMElements.inputTimePerBlock
+        let selectTimePerBlock = this.DOMElements.selectTimePerBlock
+
+        inputTimePerBlock.value = blockReward[blockRewardselected].timePerBlock
+        selectTimePerBlock.value = "SECONDS"
     }
 
     async calculateBestCoins() {
