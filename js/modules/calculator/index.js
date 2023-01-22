@@ -47,9 +47,24 @@ export class Calculator {
         
         let inputBlockReward = parseFloat(this.DOMElements.inputBlockReward.value || 0)
         let selectBlockReward = this.DOMElements.selectBlockReward.value
+
+        let inputTimePerBlock = parseFloat(this.DOMElements.inputTimePerBlock.value || 0)
+        let selectTimePerBlock = this.DOMElements.selectTimePerBlock.value
     
-        const { expextedReward, dailyReward, weeklyReward, monthlyReward } = calculateReward({ inputNetworkPower, inputUserPower, inputBlockReward, selectBlockReward })
-    
+        const { 
+            expextedReward, 
+            dailyReward, 
+            weeklyReward, 
+            monthlyReward 
+        } = calculateReward({ 
+            inputNetworkPower,
+            inputUserPower,
+            inputBlockReward,
+            selectBlockReward,
+            inputTimePerBlock, 
+            selectTimePerBlock
+        })
+
         this.DOMElements.resultExpectedReward.innerHTML = expextedReward
         this.DOMElements.resultDailyReward.innerHTML = dailyReward
         this.DOMElements.resultWeeklyReward.innerHTML = weeklyReward
@@ -71,9 +86,9 @@ export class Calculator {
     handleBlockReward () {
         let blockRewardselected = this.DOMElements.selectBlockReward.value
         let inputBlockReward = this.DOMElements.inputBlockReward
-        
+
         inputBlockReward.value = blockReward[blockRewardselected].dailyReward
-        
+
         this.handleTimePerBlock()
         this.handleCoinIcon()
     }
