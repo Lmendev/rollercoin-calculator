@@ -18,6 +18,11 @@ export const DOMElements = {
     resultWeeklyReward:     document.getElementById("resultWeeklyReward"),
     resultMonthlyReward:    document.getElementById("resultMonthlyReward"),
 
+    resultExpectedUsdReward:   document.getElementById("resultExpectedUsdReward"),
+    resultDailyUsdReward:      document.getElementById("resultDailyUsdReward"),
+    resultWeeklyUsdReward:     document.getElementById("resultWeeklyUsdReward"),
+    resultMonthlyUsdReward:    document.getElementById("resultMonthlyUsdReward"),
+
     coinIcon:               document.getElementById("coinIcon"),
     coinName:               document.getElementById("coinName"),
     coinTicker:             document.getElementById("coinTicker"),
