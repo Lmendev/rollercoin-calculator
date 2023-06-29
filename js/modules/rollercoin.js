@@ -4,68 +4,76 @@ export const blockReward = {
     timePerBlock: 600,
     name: "Bitcoin",
     ticker: "BTC",
-    icon: "btc.svg"
+    icon: "btc.svg",
+    coinGeckoId: "bitcoin",
   },
   "DOGE": {
     dailyReward: 60,
     timePerBlock: 600,
     name: "Dogecoin",
     ticker: "DOGE",
-    icon: "doge.svg"
+    icon: "doge.svg",
+    coinGeckoId: "dogecoin",
   },
   "ETH": {
     dailyReward: 0.007,
     timePerBlock: 600,
     name: "Ethereum",
     ticker: "ETH",
-    icon: "eth.svg"
+    icon: "eth.svg",
+    coinGeckoId: "ethereum",
   },
   "BNB": {
     dailyReward: 0.044,
     timePerBlock: 600,
     name: "Binancecoin",
     ticker: "BNB",
-    icon: "bnb.svg"
+    icon: "bnb.svg",
+    coinGeckoId: "binancecoin",
   },
   "MATIC": {
     dailyReward: 5.5,
     timePerBlock: 600,
     name: "Polygon",
     ticker: "matic-network",
-    icon: "matic.svg"
+    icon: "matic.svg",
+    coinGeckoId: "matic-network",
   },
   "RLT": {
     dailyReward: 20,
     timePerBlock: 600,
     name: "Rollertoken",
     ticker: "RLT",
-    icon: "rlt.svg"
+    icon: "rlt.svg",
   },
   "SOL": {
     dailyReward: 0.23,
     timePerBlock: 600,
     name: "Solana",
     ticker: "SOL",
-    icon: "sol.svg"
+    icon: "sol.svg",
+    coinGeckoId: "solana",
   },
   "RST": {
     dailyReward: 150,
     timePerBlock: 600,
     name: "Roller Season Token",
-    icon: "rst.svg"
+    icon: "rst.svg",
   },
   "TRX": {
     dailyReward: 60,
     timePerBlock: 600,
     name: "Tron",
     ticker: "tron",
-    icon: "trx.svg"
+    icon: "trx.svg",
+    coinGeckoId: "tron",
   },
   "LTC": {
     dailyReward: 0.015,
     timePerBlock: 600,
     name: "Litecoin",
     ticker: "ltc",
-    icon: "ltc.svg"
+    icon: "ltc.svg",
+    coinGeckoId: "litecoin",
   },
 }

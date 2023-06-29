@@ -38,7 +38,7 @@ export class Calculator {
         }
     }
 
-    calculate () {
+    async calculate () {
         let networkPowerSelected = this.DOMElements.selectNetworkPower.value
         let inputNetworkPower = parseFloat(this.DOMElements.inputNetworkPower.value || 0) * unit[networkPowerSelected]
         
@@ -55,8 +55,12 @@ export class Calculator {
             expextedReward, 
             dailyReward, 
             weeklyReward, 
-            monthlyReward 
-        } = calculateReward({ 
+            monthlyReward,
+            expextedUsdReward, 
+            dailyUsdReward, 
+            weeklyUsdReward, 
+            monthlyUsdReward
+        } = await calculateReward({ 
             inputNetworkPower,
             inputUserPower,
             inputBlockReward,
@@ -69,7 +73,17 @@ export class Calculator {
         this.DOMElements.resultDailyReward.innerHTML = dailyReward
         this.DOMElements.resultWeeklyReward.innerHTML = weeklyReward
         this.DOMElements.resultMonthlyReward.innerHTML = monthlyReward
-        
+
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        });
+
+        this.DOMElements.resultExpectedUsdReward.innerHTML = formatter.format(expextedUsdReward)
+        this.DOMElements.resultDailyUsdReward.innerHTML = formatter.format(dailyUsdReward)
+        this.DOMElements.resultWeeklyUsdReward.innerHTML = formatter.format(weeklyUsdReward)
+        this.DOMElements.resultMonthlyUsdReward.innerHTML = formatter.format(monthlyUsdReward)
+
         this.handleCoinIcon()
     }
 

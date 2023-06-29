@@ -5,7 +5,19 @@ const getTimePerBlock = (inputTimePerBlock, selectTimePerBlock) => inputTimePerB
 
 export const calculateRewardPerBlock = (networkPower, blockReward, userPower) => networkPower > 0? blockReward * userPower / networkPower : 0
 
-export const calculateReward = ({ inputNetworkPower, inputUserPower, inputBlockReward, selectBlockReward, inputTimePerBlock, selectTimePerBlock }) => {    
+export const calculateReward = async ({ inputNetworkPower, inputUserPower, inputBlockReward, selectBlockReward, inputTimePerBlock, selectTimePerBlock }) => { 
+    const COINGECKO_URL = `https://api.coingecko.com/api/v3/simple/price?ids=${blockReward[selectBlockReward].coinGeckoId}&vs_currencies=usd`
+    let usdPrice = 0
+
+    try{
+        let res         = await fetch(COINGECKO_URL)
+        let coingecko   = await res.json()
+
+        usdPrice = Object.values(coingecko)[0].usd
+    }catch(warn) { 
+        console.warn(warn)
+    }
+
     let rewardPerBlock = calculateRewardPerBlock(inputNetworkPower, inputBlockReward, inputUserPower)
     
     let timePerBlock = getTimePerBlock(inputTimePerBlock, selectTimePerBlock)
@@ -15,7 +27,12 @@ export const calculateReward = ({ inputNetworkPower, inputUserPower, inputBlockR
     let weeklyReward    = (rewardPerBlock * secondsInAWeek / timePerBlock).toFixed(SHORT_FIXED)
     let monthlyReward   = (rewardPerBlock * secondsInAMonth / timePerBlock).toFixed(SHORT_FIXED)
 
-    return { expextedReward, dailyReward, weeklyReward, monthlyReward }
+    const expextedUsdReward = expextedReward    * usdPrice
+    const dailyUsdReward    = dailyReward       * usdPrice
+    const weeklyUsdReward   = weeklyReward      * usdPrice
+    const monthlyUsdReward  = monthlyReward     * usdPrice
+
+    return { expextedReward, dailyReward, weeklyReward, monthlyReward, expextedUsdReward, dailyUsdReward, weeklyUsdReward, monthlyUsdReward}
 }
 
 export const calculateBestCoinsToMine = async ({networkPower, userPower}) => {
