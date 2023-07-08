@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-attr-t lang-t="lang">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!--<link rel="stylesheet" href="../css/halloween-theme.css">-->
     <!--<link rel="stylesheet" href="../css/christmas-theme.css">-->
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
-    <title>RollerCoin Calculator</title>
-    <meta name="description" content="Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage."/>
+    <title data-t>title</title>
+
+    <meta name="description" data-attr-t content-t="description"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
     <script src="../js/analytics/gtag.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body id="bestCoinsToMine">
     <header>
-        <h1>ROLLERCOIN Calculator</h1>
+        <h1 data-t>content.title</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="../index.html">Calculator</a></li>
-            <li><a href="./best-coins-to-mine.html">coins to mine</a></li>
-            <li><a href="./about.html">about</a></li>
+            <li><a href="../index.html" data-t>content.sections.calculator</a></li>
+            <li><a href="./best-coins-to-mine.html" data-t>content.sections.coins_to_mine</a></li>
+            <li><a href="./about.html" data-t>content.sections.about</a></li>
         </ul>
     </nav>
 
@@ -37,7 +38,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/btc.svg" alt="">
-                            <label for="inputNetworkPowerBTC">Enter <span class="important">Network Power</span> For  Bitcoin (BTC)</label>
+                            <label for="inputNetworkPowerBTC" data-t>content.input.network_power_btc</label>
                         </div>
                         
                         <div class="roller-input-group">
@@ -54,7 +55,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/doge.svg" alt="">
-                            <label for="inputNetworkPowerDOGE">Enter <span class="important">Network Power</span> For Dogecoin (DOGE)</label>
+                            <label for="inputNetworkPowerDOGE" data-t>content.input.network_power_doge</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerDOGE" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -70,7 +71,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/eth.svg" alt="">
-                            <label for="inputNetworkPowerETH">Enter <span class="important">Network Power</span> For Ethereum (ETH)</label>
+                            <label for="inputNetworkPowerETH" data-t>content.input.network_power_eth</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerETH" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -86,7 +87,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/bnb.svg" alt="">
-                            <label for="inputNetworkPowerBNB">Enter <span class="important">Network Power</span> For Binance (BNB)</label>
+                            <label for="inputNetworkPowerBNB" data-t>content.input.network_power_bnb</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerBNB" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -102,7 +103,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/matic.svg" alt="">
-                            <label for="inputNetworkPowerMATIC">Enter <span class="important">Network Power</span> For Polygon (MATIC)</label>
+                            <label for="inputNetworkPowerMATIC" data-t>content.input.network_power_matic</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerMATIC" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -118,7 +119,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/sol.svg" alt="">
-                            <label for="inputNetworkPowerSOL">Enter <span class="important">Network Power</span> For Solana (SOL)</label>
+                            <label for="inputNetworkPowerSOL" data-t>content.input.network_power_sol</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerSOL" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -134,7 +135,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/rlt.svg" alt="">
-                            <label for="inputNetworkPowerRLT">Enter <span class="important">Network Power</span> For Rollertoken (RLT)</label>
+                            <label for="inputNetworkPowerRLT" data-t>content.input.network_power_rlt</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerRLT" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -150,7 +151,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/trx.svg" alt="">
-                            <label for="inputNetworkPowerTRX">Enter <span class="important">Network Power</span> For Tron (TRX)</label>
+                            <label for="inputNetworkPowerTRX" data-t>content.input.network_power_trx</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerTRX" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -166,7 +167,7 @@
                     <div class="form-group">
                         <div class="label-wrapper">
                             <img src="../img/ltc.svg" alt="">
-                            <label for="inputNetworkPowerLTC">Enter <span class="important">Network Power</span> For Litecoin (LTC)</label>
+                            <label for="inputNetworkPowerLTC" data-t>content.input.network_power_ltc</label>
                         </div>
                         <div class="roller-input-group">
                             <input id="inputNetworkPowerLTC" type="number" name="inputNetworkPower" class="roller-input-number">
@@ -182,7 +183,7 @@
                     <hr>
 
                     <div class="form-group">
-                        <label for="inputUserPower">Enter <span class="important">Your</span> Desired Goal Power</label>
+                        <label for="inputUserPower">content.input.user_power</label>
                         <div class="roller-input-group">
                             <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
                             <select name="" id="selectUserPower" class="roller-select">
@@ -196,7 +197,7 @@
 
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input id="calculateButton" type="button" class="" value="Calculate">
+                            <input id="calculateButton" type="button" class="" data-attr-t value-t="content.button.submit">
                         </div>
                     </div>
                 </form>
@@ -211,7 +212,7 @@
                         <thead>
                             <tr>
                                 <th colspan="2">
-                                    <p>Best coins to mine</p>
+                                    <p data-t>content.result.coins_to_mine.title</p>
                                 </th>
                             </tr>
                         </thead>
@@ -238,19 +239,19 @@
             <div class="lang">
                 <ul class="">
                     <li>
-                        <a href="#">English</a>
+                        <a href="/pages/best-coins-to-mine.html">English</a>
                     </li>
                     <li>
-                        <a href="../es/pages/best-coins-to-mine.html">Español</a>
+                        <a href="/es/pages/best-coins-to-mine.html">Español</a>
                     </li>
 					<li>
-                        <a href="../pt/pages/best-coins-to-mine.html">Português</a>
+                        <a href="/pt/pages/best-coins-to-mine.html">Português</a>
                     </li>
                 </ul>
             </div>
 
             <div class="contact">
-                <p class="title">Contact me</p>
+                <p class="title" data-t>content.contact.title</p>
                 <ul class="social-media">
                     <li>
                         <a href="https://twitter.com/lmendev">
@@ -265,10 +266,10 @@
             <h3>Term of service</h3>
             <div class="legal">
                 <ul>
-                    <li><a href="">Term of service</a></li>
+                    <li><a href="" data-t>content.tos.title</a></li>
                 </ul>
             </div>
-            <p>Aditional information coming soon</p>
+            <p data-t>content.tos.description</p>
         </section>
     </footer>
 

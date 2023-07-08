@@ -1,0 +1,22 @@
+{
+  "name": "rollercoin-calculator",
+  "version": "2.0.0",
+  "description": "🧮 The most accurate and complete Rollercoin calculator",
+  "main": "src/js/index.js",
+  "scripts": {
+    "clear": "mkdir -p dist && rm -rf ./dist/*",
+    "copy": "npm run clear && cp -r ./src/* ./dist && rm -rf ./dist/locales",
+    "i18n": "static-i18n -i en -i es -i pt --output-dir dist --file-format yml src",
+    "build": "npm run copy && npm run i18n",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator",
+    "rollercoin"
+  ],
+  "author": "@lmendev",
+  "license": "MIT",
+  "dependencies": {
+    "static-i18n": "^0.2.10"
+  }
+}
