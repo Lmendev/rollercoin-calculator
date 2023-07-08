@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/css/style.css">
     <!--<link rel="stylesheet" href="../css/halloween-theme.css">-->
     <!--<link rel="stylesheet" href="../css/christmas-theme.css">-->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -12,7 +12,8 @@
     <title>RollerCoin Calculator</title>
     <meta name="description" content="Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage."/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
-    <script src="../js/analytics/gtag.js"></script>
+    <script data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/js/analytics/gtag.js"></script>
+  <link rel="shortcut icon" data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/favicon.ico" type="image/x-icon">
 </head>
 <body id="bestCoinsToMine">
     <header>
@@ -229,32 +230,38 @@
 
     <aside class="apps-promotion">
         <ul>
-            <li><a href="https://play.google.com/store/apps/details?id=com.codecimal.rollercoincalculator" target="_blank"><img src="../img/social-media/Google_Play_Store_badge_EN.svg" alt="get it on google play"/></a></li>
+            <li>
+                <a href="https://play.google.com/store/apps/details?id=com.codecimal.rollercoincalculator" target="_blank">
+                    <img data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/img/social-media/Google_Play_Store_badge_EN.svg" alt="get it on google play"/>
+                </a>
+            </li>
         </ul>
     </aside>
 
     <footer>
+        <h2>Footer section</h2>
         <section class="top-footer">
             <div class="lang">
                 <ul class="">
                     <li>
-                        <a href="#">English</a>
+                      <a data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/index.html">English</a>
                     </li>
                     <li>
-                        <a href="../es/pages/best-coins-to-mine.html">Español</a>
+                      <a data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/es/index.html">Español</a>
                     </li>
-					<li>
-                        <a href="../pt/pages/best-coins-to-mine.html">Português</a>
+                    <li>
+                      <a data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/pt/index.html">Português</a>
                     </li>
-                </ul>
+                  </ul>
             </div>
 
             <div class="contact">
-                <p class="title">Contact me</p>
+                <h3>Contact</h3>
+                <p class="title" data-t>content.contact.title</p>
                 <ul class="social-media">
                     <li>
                         <a href="https://twitter.com/lmendev">
-                            <img src="../img/social-media/twitter.svg" alt="twitter icon">
+                            <img data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/img/social-media/twitter.svg" alt="twitter icon">
                         </a>
                     </li>
                 </ul>
@@ -272,6 +279,6 @@
         </section>
     </footer>
 
-    <script src="../js/index.js" type="module"></script>
+    <script data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/js/index.js" type="module"></script>
 </body>
 </html>

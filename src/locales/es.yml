@@ -1,0 +1,50 @@
+lang: es
+title: Calculadora Rollercoin
+description: Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage.
+description_short: The most accurate and complete Rollercoin calculator.
+path_prefix: /rollercoin-calculator
+content:
+  title: Calculadora ROLLERCOIN
+  sections:
+    calculator: Calculadora
+    coins_to_mine: Monedas para minar
+    about: Acerca de
+  input:
+    network_power: Ingrese <span class="important">Potencia de la red</span> de la moneda deseada
+    network_power_btc: Ingrese <span class="important">Potencia de la red</span> para  Bitcoin (BTC)
+    network_power_doge: Ingrese <span class="important">Potencia de la red</span> para Dogecoin (DOGE)
+    network_power_eth: Ingrese <span class="important">Potencia de la red</span> para Ethereum (ETH)
+    network_power_bnb: Ingrese <span class="important">Potencia de la red</span> para Binance (BNB)
+    network_power_matic: Ingrese <span class="important">Potencia de la red</span> para Polygon (MATIC)
+    network_power_sol: Ingrese <span class="important">Potencia de la red</span> para Solana (SOL)
+    network_power_rlt: Ingrese <span class="important">Potencia de la red</span> para Rollertoken (RLT)
+    network_power_trx: Ingrese <span class="important">Potencia de la red</span> para Tron (TRX)
+    network_power_ltc: Ingrese <span class="important">Potencia de la red</span> para Litecoin (LTC)
+    user_power: Ingrese <span class="important">Su potencia</span> para la moneda deseada
+    block_reward: Seleccione <span class="important">moneda deseada</span> y <span class="important">Recompensa por bloque</span>
+    time_per_block: Ingrese <span class="important">Tiempo por Bloque</span> De la Moneda Deseada
+  button:
+    submit: Calcular
+  result:
+    calculate_reward:
+      title: Resultados de recompensas
+      column:
+        time: Tiempo
+        coin: Moneda
+        usd: <span class="highlight-tag">Nuevo</span> Dolares
+      row:
+        expected: Por bloque
+        daily: Diario
+        weekly: Semanal
+        monthly: Mensual
+    coins_to_mine:
+      title: Mejores monedas para minar
+  contact:
+    title: Contáctame
+  tos:
+    title: Términos de servicio
+    description: Próximamente información adicional
+  about:
+    title: Acerca de Rollercoin Calculator
+    info: Un proyecto de código abierto
+    created_by: Desarrollado inicialmente por

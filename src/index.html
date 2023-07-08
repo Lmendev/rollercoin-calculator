@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html data-attr-t lang-t="lang">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/css/style.css">
+  <!--<link rel="stylesheet" href="./css/halloween-theme.css">-->
+  <!--<link rel="stylesheet" href="./css/christmas-theme.css">-->
+  <title data-t>title</title>
+  
+  <meta name="description" data-attr-t content-t="description"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
+  <script data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/js/analytics/gtag.js"></script>
+  <link rel="shortcut icon" data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/favicon.ico" type="image/x-icon">
+  
+  <meta name="google-site-verification" content="P0Wlg-HV2OUnCIeP7Guu70fZNk8rHSvPlYRqxzBXhmc" />
+  <meta property="og:title" data-attr-t content-t="title">
+  <meta property="og:description" data-attr-t content-t="description_short">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Lmendev/rollercoin-calculator/main/.assets/screenshot.png">
+  <meta property="og:url" content="https://lmendev.github.io/rollercoin-calculator">
+
+  <meta name="twitter:title" data-attr-t content-t="title">
+  <meta name="twitter:description" data-attr-t content-t="description_short">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Lmendev/rollercoin-calculator/main/.assets/screenshot.png">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body id="index">
+  <header>
+    <h1 data-t>content.title</h1>
+  </header>
+
+  <nav>
+    <h2>Navigation</h2>
+    <ul>
+      <li><a href="./index.html" data-t>content.sections.calculator</a></li>
+      <li><a href="./pages/best-coins-to-mine.html" data-t>content.sections.coins_to_mine</a></li>
+      <li><a href="./pages/about.html" data-t>content.sections.about</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="form-container">
+        <div class="form-content roller-section">
+          <h2>Calculator</h2>
+
+          <form action="">
+            <div class="form-group">
+                <label for="inputNetworkPower" data-t>content.input.network_power</label>
+                <div class="roller-input-group">
+                    <input id="inputNetworkPower" type="number" name="inputNetworkPower" class="roller-input-number">
+                    <select id="selectNetworkPower" name="" class="roller-select">
+                        <option value="GH/s">GH/s</option>
+                        <option value="TH/s">TH/s</option>
+                        <option value="PH/s">PH/s</option>
+                        <option value="EH/s" selected>EH/s</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputUserPower" data-t>content.input.user_power</label>
+                <div class="roller-input-group">
+                    <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
+                    <select name="" id="selectUserPower" class="roller-select">
+                        <option value="GH/s">GH/s</option>
+                        <option value="TH/s" selected>TH/s</option>
+                        <option value="PH/s">PH/s</option>
+                        <option value="EH/s">EH/s</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputBlockReward" data-t>content.input.block_reward</label>
+                <div class="roller-input-group">
+                    <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
+                    <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
+                        <option value="BTC" selected>BTC</option>
+                        <option value="DOGE">DOGE</option>
+                        <option value="ETH">ETH</option>
+                        <option value="BNB">BNB</option>
+                        <option value="MATIC">MATIC</option>
+                        <option value="SOL">SOL</option>
+                        <option value="RLT">RLT</option>
+                        <option value="RST">RST</option>
+                        <option value="TRX">TRX</option>
+                        <option value="LTC">LTC</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputTimePerBlock" data-t>content.input.time_per_block</label>
+                <div class="roller-input-group">
+                    <input type="number" id="inputTimePerBlock" name="inputTimePerBlock" class="roller-input-number">
+                    <select id="selectTimePerBlock" name="selectTimePerBlock" class="roller-select">
+                        <option value="SECONDS" selected>Seconds</option>
+                        <option value="MINUTES">Minutes</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="btn-submit-container">
+                <div class="tree-dimensional-button btn-default">
+                    <input id="calculateButton" type="button" class="" data-attr-t value-t="content.button.submit">
+                </div>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="result-container">
+      <div class="calculated-reward roller-section">
+        <h2>Results</h2>
+        <div class="table-responsive">
+          <table class="roller-table">
+            <thead>
+              <tr>
+                <th colspan="3">
+                  <p data-t>content.result.calculate_reward.title</p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <p data-t>content.result.calculate_reward.column.time</p>
+                </th>
+                <th>
+                  <p data-t>content.result.calculate_reward.column.coin</p>
+                </th>
+                <th>
+                  <p data-t>content.result.calculate_reward.column.usd</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p data-t>content.result.calculate_reward.row.expected</p>
+                </td>
+                <td>
+                  <p id="resultExpectedReward"></p>
+                </td>
+                <td>
+                  <p id="resultExpectedUsdReward"></p>
+                </td>
+              </tr>
+                <tr>
+                  <td>
+                    <p data-t>content.result.calculate_reward.row.daily</p>
+                  </td>
+                  <td>
+                    <p id="resultDailyReward"></p>
+                  </td>
+                  <td>
+                    <p id="resultDailyUsdReward"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p data-t>content.result.calculate_reward.row.weekly</p>
+                  </td>
+                  <td>
+                    <p id="resultWeeklyReward"></p>
+                  </td>
+                  <td>
+                    <p id="resultWeeklyUsdReward"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p data-t>content.result.calculate_reward.row.monthly</p>
+                  </td>
+                  <td>
+                    <p id="resultMonthlyReward"></p>
+                  </td>
+                  <td>
+                    <p id="resultMonthlyUsdReward"></p>
+                  </td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+
+        <div class="desired-coin">
+          <div class="desired-coin-container">
+            <div class="icon">
+              <img id="coinIcon" src="./img/btc.svg" alt="Bitcoin">
+            </div>
+            <div class="title-text">
+              <p id="coinName">Bitcoin</p>
+              <p id="coinTicker">BTC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="apps-promotion">
+    <ul>
+      <li>
+        <a href="https://play.google.com/store/apps/details?id=com.codecimal.rollercoincalculator" target="_blank">
+          <img data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/img/social-media/Google_Play_Store_badge_EN.svg" alt="get it on google play"/>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <footer>
+    <h2>Footer section</h2>
+    <section class="top-footer">
+        <div class="lang">
+          <h3>Languajes</h3>
+          <ul class="">
+            <li>
+              <a data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/index.html">English</a>
+            </li>
+            <li>
+              <a data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/es/index.html">Español</a>
+            </li>
+            <li>
+              <a data-attr-t data-attr-t-interpolate href-t="{{path_prefix}}/pt/index.html">Português</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h3>Contact</h3>
+          <p class="title" data-t>content.contact.title</p>
+          <ul class="social-media">
+            <li>
+              <a href="https://twitter.com/lmendev">
+                <img data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/img/social-media/twitter.svg" alt="twitter icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+      
+    <section class="bottom-footer">
+      <h3>Term of service</h3>
+      <div class="legal">
+        <ul>
+          <li><a href="" data-t>content.tos.title</a></li>
+        </ul>
+      </div>
+      <p data-t>content.tos.description</p>
+    </section>
+  </footer>
+
+  <script data-attr-t data-attr-t-interpolate src-t="{{path_prefix}}/js/index.js" type="module"></script>
+</body>
+</html>
