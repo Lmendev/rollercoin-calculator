@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="stylesheet" href="../css/halloween-theme.css">-->
+    <!--<link rel="stylesheet" href="../css/christmas-theme.css">-->
+    <title>Calculadora Rollercoin</title>
+    
+    <meta name="description" content="Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage."/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
+    <script src="../js/analytics/gtag.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    
+    <meta name="google-site-verification" content="P0Wlg-HV2OUnCIeP7Guu70fZNk8rHSvPlYRqxzBXhmc" />
+    <meta property="og:title" content="RollerCoin Calculator">
+    <meta property="og:description" content="The most accurate and complete Rollercoin calculator.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Lmendev/rollercoin-calculator/main/.assets/screenshot.png">
+    <meta property="og:url" content="https://lmendev.github.io/rollercoin-calculator">
+
+    <meta name="twitter:title" content="RollerCoin Calculator">
+    <meta name="twitter:description" content="The most accurate and complete Rollercoin calculator.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Lmendev/rollercoin-calculator/main/.assets/screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body id="index">
+    <header>
+        <h1>Calculadora ROLLERCOIN</h1>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="../es/index.html">Calculadora</a></li>
+            <li><a href="pages/best-coins-to-mine.html">Monedas para minar</a></li>
+            <li><a href="./pages/about.html">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <div class="form-content roller-section">
+                <h2>Calculator</h2>
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="inputNetworkPower">Ingrese <span class="important">Potencia de la red</span> de la moneda deseada</label>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPower" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPower" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputUserPower">Ingrese <span class="important">Su potencia</span> para la moneda deseada</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
+                            <select name="" id="selectUserPower" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s" selected>TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputBlockReward">Seleccione <span class="important">moneda deseada</span> y <span class="important">Recompensa por bloque</span></label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
+                            <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
+                                <option value="BTC" selected>BTC</option>
+                                <option value="DOGE">DOGE</option>
+                                <option value="ETH">ETH</option>
+                                <option value="BNB">BNB</option>
+                                <option value="MATIC">MATIC</option>
+                                <option value="SOL">SOL</option>
+                                <option value="RLT">RLT</option>
+                                <option value="RST">RST</option>
+                                <option value="TRX">TRX</option>
+                                <option value="LTC">LTC</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTimePerBlock">Ingrese <span class="important">Tiempo por Bloque</span> De la Moneda Deseada</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputTimePerBlock" name="inputTimePerBlock" class="roller-input-number">
+                            <select id="selectTimePerBlock" name="selectTimePerBlock" class="roller-select">
+                                <option value="SECONDS" selected>Segundos</option>
+                                <option value="MINUTES">Minutos</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input id="calculateButton" type="button" class="" value="Calcular">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="calculated-reward roller-section">
+                <h2>Results</h2>
+                <div class="table-responsive">
+                    <table class="roller-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <p>Resultados de recompensas</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Por bloque</p>
+                                </td>
+                                <td>
+                                    <p id="resultExpectedReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Diario</p>
+                                </td>
+                                <td>
+                                    <p id="resultDailyReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Semanal</p>
+                                </td>
+                                <td>
+                                    <p id="resultWeeklyReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Mensual</p>
+                                </td>
+                                <td>
+                                    <p id="resultMonthlyReward"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+
+                <div class="desired-coin">
+                    <div class="desired-coin-container">
+                        <div class="icon">
+                            <img id="coinIcon" src="../img/btc.svg" alt="Bitcoin">
+                        </div>
+                        <div class="title-text">
+                            <p id="coinName">Bitcoin</p>
+                            <p id="coinTicker">BTC</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <aside class="apps-promotion">
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.codecimal.rollercoincalculator" target="_blank"><img src="../img/social-media/Google_Play_Store_badge_EN.svg" alt="get it on google play"/></a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <h2>Footer section</h2>
+        <section class="top-footer">
+            <div class="lang">
+                <h3>Languajes</h3>
+                <ul class="">
+                    <li>
+                        <a href="../index.html">English</a>
+                    </li>
+                    <li>
+                        <a href="#">Español</a>
+                    </li>
+					<li>
+                        <a href="../pt/index.html">Português</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <p class="title">Contáctame</p>
+                <ul class="social-media">
+                    <li>
+                        <a href="https://twitter.com/lmendev">
+                            <img src="../img/social-media/twitter.svg" alt="twitter icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="bottom-footer">
+            <h3>Term of service</h3>
+            <div class="legal">
+                <ul>
+                    <li><a href="">Términos de servicio</a></li>
+                </ul>
+            </div>
+            <p>Próximamente información adicional</p>
+        </section>
+    </footer>
+
+    <script src="../js/index.js" type="module"></script>
+</body>
+</html>

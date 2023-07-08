@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--<link rel="stylesheet" href="../../css/halloween-theme.css">-->
+    <!--<link rel="stylesheet" href="../../css/christmas-theme.css">-->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <title>RollerCoin Calculator</title>
+    <meta name="description" content="Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage."/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK49KE05FM"></script>
+    <script src="../../js/analytics/gtag.js"></script>
+</head>
+<body id="bestCoinsToMine">
+    <header>
+        <h1>Calculadora ROLLERCOIN</h1>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="../../pt/index.html">Calculadora</a></li>
+            <li><a href="#">Moedas para minar</a></li>
+	    <li><a href="../../pt/pages/about.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="form-container">
+            <div class="form-content roller-section">
+                <h2></h2>
+
+                <form action="">
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/btc.svg" alt="">
+                            <label for="inputNetworkPowerBTC">Insira <span class="important">Potência da rede</span> para  Bitcoin (BTC)</label>
+                        </div>
+                        
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerBTC" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerBTC" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/doge.svg" alt="">
+                            <label for="inputNetworkPowerDOGE">Insira <span class="important">Potência da rede</span> para Dogecoin (DOGE)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerDOGE" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerDOGE" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/eth.svg" alt="">
+                            <label for="inputNetworkPowerETH">Insira <span class="important">Potência da rede</span> para Ethereum (ETH)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerETH" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerETH" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/bnb.svg" alt="">
+                            <label for="inputNetworkPowerBNB">Insira <span class="important">Potência da rede</span> para Binance (BNB)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerBNB" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerBNB" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/matic.svg" alt="">
+                            <label for="inputNetworkPowerMATIC">Insira <span class="important">Potência da rede</span> para Polygon (MATIC)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerMATIC" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerMATIC" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/sol.svg" alt="">
+                            <label for="inputNetworkPowerSOL">Insira <span class="important">Potência da rede</span> para Solana (SOL)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerSOL" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerSOL" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/rlt.svg" alt="">
+                            <label for="inputNetworkPowerRLT">Insira <span class="important">Potência da rede</span> para Rollertoken (RLT)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerRLT" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerRLT" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/trx.svg" alt="">
+                            <label for="inputNetworkPowerTRX">Insira <span class="important">Potência da rede</span> para Tron (TRX)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerTRX" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerTRX" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <img src="../../img/ltc.svg" alt="">
+                            <label for="inputNetworkPowerLTC">Insira <span class="important">Potência da rede</span> para Litecoin (LTC)</label>
+                        </div>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPowerLTC" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPowerLTC" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>                    
+
+                    <hr>
+
+                    <div class="form-group">
+                        <label for="inputUserPower">Insira <span class="important">Sua Potência total</span> de mineração</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
+                            <select name="" id="selectUserPower" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s" selected>TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input id="calculateButton" type="button" class="" value="Calcular">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="result-container">
+
+            <div class="calculated-reward roller-section">
+                <div class="table-responsive">
+                    <table id="result-table" class="roller-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <p>Melhores moedas para minar</p>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody></tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <aside class="apps-promotion">
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.codecimal.rollercoincalculator" target="_blank"><img src="../../img/social-media/Google_Play_Store_badge_EN.svg" alt="get it on google play"/></a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <h2>Footer section</h2>
+        <section class="top-footer">
+            <div class="lang">
+                <h3>Idiomas</h3>
+                <ul class="">
+                    <li>
+                        <a href="../../pages/best-coins-to-mine.html">English</a>
+                    </li>
+                    <li>
+                        <a href="../../es/pages/best-coins-to-mine.html">Español</a>
+                    </li>
+					<li>
+                        <a href="#">Português</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <p class="title">Contacto</p>
+                <ul class="social-media">
+                    <li>
+                        <a href="https://twitter.com/lmendev">
+                            <img src="../../img/social-media/twitter.svg" alt="twitter icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="bottom-footer">
+            <div class="legal">
+                <ul>
+                    <li><a href="">Termos e Condições</a></li>
+                </ul>
+            </div>
+            <p>Brevemente, informação adicional</p>
+        </section>
+    </footer>
+
+    <script src="../../js/index.js" type="module"></script>
+</body>
+</html>
