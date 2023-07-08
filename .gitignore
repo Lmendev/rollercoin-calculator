@@ -1,5 +1,2 @@
-# visual studio code folder
-.vscode
-
-# Personal TODO list
-TODO.txt
+node_modules
+dist
