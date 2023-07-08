@@ -1,0 +1,49 @@
+lang: pt
+title: Calculadora ROLLERCOIN
+description: Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage.
+description_short: The most accurate and complete Rollercoin calculator.
+content:
+  title: Calculadora ROLLERCOIN
+  sections:
+    calculator: Calculadora
+    coins_to_mine: Moedas para minar
+    about: Sobre
+  input:
+    network_power: Insira <span class="important">Potência da rede</span> da moeda desejada
+    network_power_btc: Insira <span class="important">Potência da rede</span> para  Bitcoin (BTC)
+    network_power_doge: Insira <span class="important">Potência da rede</span> para Dogecoin (DOGE)
+    network_power_eth: Insira <span class="important">Potência da rede</span> para Ethereum (ETH)
+    network_power_bnb: Insira <span class="important">Potência da rede</span> para Binance (BNB)
+    network_power_matic: Insira <span class="important">Potência da rede</span> para Polygon (MATIC)
+    network_power_sol: Insira <span class="important">Potência da rede</span> para Solana (SOL)
+    network_power_rlt: Insira <span class="important">Potência da rede</span> para Rollertoken (RLT)
+    network_power_trx: Insira <span class="important">Potência da rede</span> para Tron (TRX)
+    network_power_ltc: Insira <span class="important">Potência da rede</span> para Litecoin (LTC)
+    user_power: Insira <span class="important">Tua potência</span> para a moeda desejada
+    block_reward: Seleccione <span class="important">moeda desejada</span> e <span class="important">Recompensa por bloco</span>
+    time_per_block: Insira <span class="important">Tempo por Bloco</span> Para Moeda Escolhida
+  button:
+    submit: Calcular
+  result:
+    calculate_reward:
+      title: Resultados das recompensas
+      column:
+        time: tempo
+        coin: moeda
+        usd: <span class="highlight-tag">novo</span> USD
+      row:
+        expected: Por bloco
+        daily: Diário
+        weekly: Semanal
+        monthly: Mensal
+    coins_to_mine:
+      title: Melhores moedas para minar
+  contact:
+    title: Contacto
+  tos:
+    title: Termos e Condições
+    description: Brevemente, informação adicional
+  about:
+    title: Sobre
+    info: Este é um projecto de código aberto
+    created_by: Desenvolvido por

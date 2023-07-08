@@ -1,0 +1,49 @@
+lang: en
+title: RollerCoin Calculator
+description: Rollercoin Calculator, The most accurate and complete Rollercoin calculator. Get list of best coins to mine on crypto game webpage.
+description_short: The most accurate and complete Rollercoin calculator.
+content:
+  title: ROLLERCOIN Calculator
+  sections:
+    calculator: Calculator
+    coins_to_mine: Coins to mine
+    about: about
+  input:
+    network_power: Enter <span class="important">Network Power</span> For Desired Coin
+    network_power_btc: Enter <span class="important">Network Power</span> For  Bitcoin (BTC)
+    network_power_doge: Enter <span class="important">Network Power</span> For Dogecoin (DOGE)
+    network_power_eth: Enter <span class="important">Network Power</span> For Ethereum (ETH)
+    network_power_bnb: Enter <span class="important">Network Power</span> For Binance (BNB)
+    network_power_matic: Enter <span class="important">Network Power</span> For Polygon (MATIC)
+    network_power_sol: Enter <span class="important">Network Power</span> For Solana (SOL)
+    network_power_rlt: Enter <span class="important">Network Power</span> For Rollertoken (RLT)
+    network_power_trx: Enter <span class="important">Network Power</span> For Tron (TRX)
+    network_power_ltc: Enter <span class="important">Network Power</span> For Litecoin (LTC)
+    user_power: Enter <span class="important">Your</span> Desired Goal Power
+    block_reward: Enter <span class="important">Block Reward</span> For Desired Coin
+    time_per_block: Enter <span class="important">Block Timer</span> For Desired Coin
+  button:
+    submit: Calculate
+  result:
+    calculate_reward:
+      title: Calculated Reward
+      column:
+        time: time
+        coin: coin
+        usd: <span class="highlight-tag">new</span> USD
+      row:
+        expected: Expected
+        daily: Daily
+        weekly: Weekly
+        monthly: Monthly
+    coins_to_mine:
+      title: Best coins to mine
+  contact:
+    title: Contact me
+  tos:
+    title: Term of service
+    description: Aditional information coming soon
+  about:
+    title: About
+    info: This project is fully open source
+    created_by: Created by
