@@ -1,0 +1,17 @@
+{
+  "name": "rollercoin-calculator",
+  "version": "2.0.0",
+  "description": "🧮 The most accurate and complete Rollercoin calculator",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator",
+    "rollercoin"
+  ],
+  "author": "@lmendev",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
