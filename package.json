@@ -13,5 +13,6 @@
   "author": "@lmendev",
   "license": "MIT",
   "dependencies": {
+    "static-i18n": "^0.2.10"
   }
 }
