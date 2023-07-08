@@ -8,7 +8,7 @@ export const blockReward = {
     coinGeckoId: "bitcoin",
   },
   "DOGE": {
-    dailyReward: 60,
+    dailyReward: 140,
     timePerBlock: 600,
     name: "Dogecoin",
     ticker: "DOGE",
