@@ -76,4 +76,12 @@ export const blockReward = {
     icon: "ltc.svg",
     coinGeckoId: "litecoin",
   },
+  "XRP": {
+    dailyReward: 12,
+    timePerBlock: 600,
+    name: "Ripple",
+    ticker: "XRP",
+    icon: "xrp.svg",
+    coinGeckoId: "ripple",
+  },
 }
