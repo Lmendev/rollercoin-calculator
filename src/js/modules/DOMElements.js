@@ -45,6 +45,8 @@ export const DOMElements = {
     selectNetworkPowerTRX:  document.getElementById("selectNetworkPowerTRX"),
     inputNetworkPowerLTC:   document.getElementById("inputNetworkPowerLTC"),
     selectNetworkPowerLTC:  document.getElementById("selectNetworkPowerLTC"),
+    inputNetworkPowerXRP:   document.getElementById("inputNetworkPowerXRP"),
+    selectNetworkPowerXRP:  document.getElementById("selectNetworkPowerXRP"),
 
     resultTableBody:        document.getElementById("result-table")?.getElementsByTagName("tbody")[0]
 }

@@ -128,8 +128,9 @@ export class Calculator {
         let sol = parseFloat(this.DOMElements.inputNetworkPowerSOL.value || 0)      * unit[this.DOMElements.selectNetworkPowerSOL.value]
         let trx = parseFloat(this.DOMElements.inputNetworkPowerTRX.value || 0)      * unit[this.DOMElements.selectNetworkPowerTRX.value]
         let ltc = parseFloat(this.DOMElements.inputNetworkPowerLTC.value || 0)      * unit[this.DOMElements.selectNetworkPowerLTC.value]
+        let xrp = parseFloat(this.DOMElements.inputNetworkPowerXRP.value || 0)      * unit[this.DOMElements.selectNetworkPowerXRP.value]
 
-        let networkPower = {btc, doge, eth, bnb, rlt, matic, sol, trx, ltc}
+        let networkPower = {btc, doge, eth, bnb, rlt, matic, sol, trx, ltc, xrp}
     
         let userPower = parseFloat(this.DOMElements.inputUserPower.value || 0) * unit[this.DOMElements.selectUserPower.value]
     

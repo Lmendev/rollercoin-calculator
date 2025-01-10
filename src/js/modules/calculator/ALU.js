@@ -36,7 +36,7 @@ export const calculateReward = async ({ inputNetworkPower, inputUserPower, input
 }
 
 export const calculateBestCoinsToMine = async ({networkPower, userPower}) => {
-    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin,matic-network,solana,tron,litecoin&vs_currencies=usd"
+    const COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin,ethereum,binancecoin,matic-network,solana,tron,litecoin,ripple&vs_currencies=usd"
         
     try{
         let res         = await fetch(COINGECKO_URL) 
